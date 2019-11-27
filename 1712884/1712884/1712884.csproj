@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC3321AB-3A9D-481F-8140-8EDB4007F1B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_1712884</RootNamespace>
+    <AssemblyName>1712884</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlzEx, Version=4.0.0.0, Culture=neutral, PublicKeyToken=69f1c32f803d307e, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.4.1.0\lib\net462\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent, Version=7.0.0.0, Culture=neutral, PublicKeyToken=3e436e32a8c5546f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fluent.Ribbon.7.0.0\lib\net462\Fluent.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.0.1\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\new.png" />
+    <Resource Include="Images\open.png" />
+    <Resource Include="Images\saveas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\paint.png" />
+    <Resource Include="Images\reundo.png" />
+    <Resource Include="Images\save.png" />
+    <Resource Include="Images\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pastefrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\eraser.png" />
+    <Resource Include="Images\fill.png" />
+    <Resource Include="Images\fillcolor.png" />
+    <Resource Include="Images\magnifier.png" />
+    <Resource Include="Images\pencil.png" />
+    <Resource Include="Images\text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\color-picker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1.PNG" />
+    <Resource Include="Images\9.PNG" />
+    <Resource Include="Images\10.PNG" />
+    <Resource Include="Images\11.PNG" />
+    <Resource Include="Images\12.PNG" />
+    <Resource Include="Images\13.PNG" />
+    <Resource Include="Images\14.PNG" />
+    <Resource Include="Images\15.PNG" />
+    <Resource Include="Images\16.PNG" />
+    <Resource Include="Images\17.PNG" />
+    <Resource Include="Images\18.PNG" />
+    <Resource Include="Images\2.PNG" />
+    <Resource Include="Images\19.PNG" />
+    <Resource Include="Images\20.PNG" />
+    <Resource Include="Images\21.PNG" />
+    <Resource Include="Images\22.PNG" />
+    <Resource Include="Images\23.PNG" />
+    <Resource Include="Images\3.PNG" />
+    <Resource Include="Images\4.PNG" />
+    <Resource Include="Images\5.PNG" />
+    <Resource Include="Images\6.PNG" />
+    <Resource Include="Images\7.PNG" />
+    <Resource Include="Images\8.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\nooutline.png" />
+    <Resource Include="Images\paint-brush-4.png" />
+    <Resource Include="Images\paint-brush 6.png" />
+    <Resource Include="Images\paint-brush-1.png" />
+    <Resource Include="Images\paint-brush-2.png" />
+    <Resource Include="Images\paint-brush-3.png" />
+    <Resource Include="Images\paint-brush-5.png" />
+    <Resource Include="Images\paint-brush-7.png" />
+    <Resource Include="Images\paint-brush.png" />
+    <Resource Include="Images\solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\line.png" />
+    <Resource Include="Images\line1.png" />
+    <Resource Include="Images\line2.png" />
+    <Resource Include="Images\line3.png" />
+    <Resource Include="Images\line4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\paint-brush-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\black.png" />
+    <Resource Include="Images\white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\editcolor.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\editpaint3d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\crop.png" />
+    <Resource Include="Images\resize.png" />
+    <Resource Include="Images\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\selectall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\invertselection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\delete.png" />
+    <Resource Include="Images\horizontal.png" />
+    <Resource Include="Images\rotate-left.png" />
+    <Resource Include="Images\rotate-right.png" />
+    <Resource Include="Images\rotate.png" />
+    <Resource Include="Images\vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\100.png" />
+    <Resource Include="Images\fullscreen.png" />
+    <Resource Include="Images\thumbnails.png" />
+    <Resource Include="Images\zoom-in.png" />
+    <Resource Include="Images\zoom-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bmp.png" />
+    <Resource Include="Images\gif.png" />
+    <Resource Include="Images\jpeg.png" />
+    <Resource Include="Images\otherformats.png" />
+    <Resource Include="Images\png.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
